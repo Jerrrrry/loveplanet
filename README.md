@@ -20,3 +20,14 @@ $ yarn run generate
 ```
 
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+
+include js file
+
+https://github.com/nuxt/nuxt.js/issues/1149
+
+vendor: [
+  "~/assets/libs/modernizr.min.js",
+  "~/assets/libs/detectizr.min.js",
+  "~/assets/libs/jeelizFaceFilter.js",
+  "~/assets/libs/JeelizResizer.js"
+],

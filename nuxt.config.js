@@ -15,7 +15,16 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    ],
+    script: [
+      { src: 'libs/jquery/jquery-2.2.4.min.js' },
+      { src: 'libs/popper.min.js' },
+      { src: 'libs/bootstrap.min.js' },
+      { src: 'libs/plugins.js' },
+      { src: 'libs/active.js' },
+
+    ],
+
   },
 
   /*
@@ -56,6 +65,7 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
+
     extend(config, ctx) {
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
